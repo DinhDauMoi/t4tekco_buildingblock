@@ -9,7 +9,7 @@
     "author": "T4Tek Team",
     "website": "https://ocop.one/",
     "version": "16.0.1.0.0",
-    "category": "OCOP/Website",
+    "category": "Website",
     # any module necessary for this one to work correctly
     'depends': ['base','ocop_web_core'],
 

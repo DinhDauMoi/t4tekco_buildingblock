@@ -5,7 +5,7 @@
     "description": """Huhuhu""",
     "author": "T4Tek Team",
     "website": "https://ocop.one/",
-    "category": "OCOP/Website",
+    "category": "Website",
     "version": "16.0.1.0.0",
     "depends": [
         "ocop",
