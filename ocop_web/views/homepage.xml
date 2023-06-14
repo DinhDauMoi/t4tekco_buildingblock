@@ -1,0 +1,60 @@
+<odoo>
+    <template id="homepage" inherit_id="website.homepage" name="Home">
+        <xpath expr="." position="replace">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'homepage'" />
+                <div id="wrap" class="oe_structure oe_empty">
+                    <!-- Replace Here -->
+                    <section class="s_text_block pt40 pb40 o_colored_level"
+                        data-snippet="s_text_block" data-name="Text"
+                        style="background-image: none;">
+                        <div class="container s_allow_columns">
+                            <p class="o_default_snippet_text">Great stories have a <b
+                                    class="o_default_snippet_text">personality</b>. Consider telling
+                                a great story that provides personality. Writing a story with
+                                personality for potential clients will assist with making a
+                                relationship connection. This shows up in small quirks like word
+                                choices or phrases. Write from your point of view, not from someone
+                                else's experience.</p>
+                            <p class="o_default_snippet_text">Great stories are <b
+                                    class="o_default_snippet_text">for everyone</b> even when only
+                                written <b class="o_default_snippet_text">for just one
+                                    person</b>. If you try to write with a wide, general audience in
+                                mind, your story will sound fake and lack emotion. No one will be
+                                interested. Write for one person. If it’s genuine for the one, it’s
+                                genuine for the rest.</p>
+                        </div>
+                    </section>
+                    <section class="s_features pt32 pb32 o_colored_level"
+                        data-snippet="s_features"
+                        data-name="Features" style="background-image: none;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                                    <i class="fa fa-3x fa-gear rounded bg-primary m-3" />
+                                    <h3 class="o_default_snippet_text">First Feature</h3>
+                                    <p class="o_default_snippet_text">Tell what's the value for the <br />customer
+                                        for this feature.</p>
+                                </div>
+                                <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                                    <i class="fa fa-3x fa-photo rounded bg-o-color-5 m-3" />
+                                    <h3 class="o_default_snippet_text">Second Feature</h3>
+                                    <p class="o_default_snippet_text">Write what the customer would
+                                        like to know, <br />not what you want to show.</p>
+                                </div>
+                                <div class="col-lg-4 pt32 pb32 text-center o_colored_level">
+                                    <i class="fa fa-3x fa-leaf rounded bg-secondary m-3" />
+                                    <h3 class="o_default_snippet_text">Third Feature</h3>
+                                    <p class="o_default_snippet_text">A small explanation of this
+                                        great <br />feature, in clear words.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- End Replace -->
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

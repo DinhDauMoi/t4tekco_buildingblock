@@ -1,0 +1,15 @@
+<odoo>
+    <template id="ocop_web.templatesEvent" inherit_id="website.snippets" name="OCOC Snippets">
+        <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="ocop_web.UpconingEvent"
+                t-thumbnail="/website/static/src/img/snippets_thumbs/s_searchbar.svg" />
+        </xpath>
+
+        <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="ocop_web.ourparterships"
+                t-thumbnail="/website/static/src/img/snippets_thumbs/s_searchbar.svg" />
+        </xpath>
+    </template>
+
+    
+</odoo>

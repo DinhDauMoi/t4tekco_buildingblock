@@ -1,0 +1,116 @@
+<odoo>
+
+  <template id="ocop_web.UpconingEvent" name="UpconingEvent">
+    <section class="container">
+      <div class="row"> 
+
+        <div class="col-lg-6 col-sm-12 s_carousel s_carousel_default carousel slide" data-bs-interval="10000" id="myCarousel1685952895173" style="background-image: none;">
+                <div class="carousel-inner">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/ocop_web/static/src/img/event.png" class="d-block w-100 " alt="..."/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/ocop_web/static/src/img/event.png" class="d-block w-100" alt="..."/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/ocop_web/static/src/img/event.png" class="d-block w-100" alt="..."/>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+          
+        </div>
+
+        <div class=" col col-lg-6 col-sm-12">
+            <t t-call="website.s_dynamic_snippet_template">
+                <t t-set="snippet_name" t-value="'s_events'"/>
+                <t t-set="snippet_classes" t-value="'s_event_upcoming_snippet'"/>
+            </t>
+
+        </div>
+      </div>
+    </section>
+  </template>
+
+
+    <template id="ocop_web.ourparterships" name="Our Parterships">
+        <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none; position: relative;" data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Airy/14&quot;,&quot;flip&quot;:[]}"><div class="o_we_shape o_web_editor_Airy_14" style=""/>
+         <t t-call-assets="ocop_web.assetsourpartership"/>
+         <div class="o_grid_item g-col-lg-12 g-height-2 col-lg-12" style="grid-area: 1 / 1 / 3 / 13; z-index: 1;">
+         <h2 style="text-align: center;"><span class="o_animated_text o_animate o_animate_both_scroll o_anim_flip_in_x" style="">ĐỐI TÁC CỦA CHÚNG TÔI</span><br/></h2></div>
+        <div class="s_allow_columns container">
+          <div class="slider container">
+            <div class="slide-track">
+                
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="https://www.internship.edu.vn/wp-content/uploads/2022/09/t4tek-square-200x200.png" alt="" loading="lazy" style=""/>
+                </div>
+                
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="/ocop_web/static/src/img/img_ourparterships/JaysonVietNam.png" alt="" loading="lazy" style=""/>
+                </div>
+                
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="/ocop_web/static/src/img/img_ourparterships/Kimthanh.png" alt="" loading="lazy" style=""/>
+                </div>
+                
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="/ocop_web/static/src/img/img_ourparterships/Link.jpg" alt="" loading="lazy" style=""/>
+                </div>
+                
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="/ocop_web/static/src/img/img_ourparterships/LngVietNam.jpg" alt="" loading="lazy" style=""/>
+                </div>
+
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="/ocop_web/static/src/img/img_ourparterships/Odoo%20comunicate.jpg" alt="" loading="lazy" style=""/>
+                </div>
+                  
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="/ocop_web/static/src/img/img_ourparterships/Screenshot%202023-05-30%20145243.png" alt="" loading="lazy" style=""/>
+                </div>
+                
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="/ocop_web/static/src/img/img_ourparterships/SongHongIct.png" alt="" loading="lazy" style=""/>
+                </div>
+              
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="/ocop_web/static/src/img/img_ourparterships/lOGOT4T3K.jpg" alt="" loading="lazy" style=""/>
+                </div>
+              
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="/ocop_web/static/src/img/img_ourparterships/namquang.png" alt="" loading="lazy" style=""/>
+                </div>
+                
+                <div class="slide" style="margin-left:20px;margin-right:20px;">
+                    <img src="/ocop_web/static/src/img/img_ourparterships/quanxuan.png" alt="" loading="lazy" style=""/>
+                </div>
+                
+                
+                
+                
+            </div>
+          </div>
+        </div>
+      </section>
+    </template>
+
+      
+
+
+</odoo>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="ocop_web" name="ocop_snippets" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_effect']/div[hasclass('o_panel_body')]" position="inside">
+            <t t-snippet="ocop_web.slide" t-thumbnail="/website/static/src/img/snippets_thumbs/s_searchbar.svg" />
+        </xpath>
+    </template>
+</odoo>

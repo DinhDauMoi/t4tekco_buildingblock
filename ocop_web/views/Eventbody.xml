@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+
+        <template id="ocop_web.Eventbody">
+          <html>
+            <head>
+            <t t-call-assets="ocop_web_core.web_assets_core"/>
+            </head>
+            <body>
+                <!-- EvenBody -->
+        <div class="container" style="margin-top:30px">
+           <h1 style="text-align: center;margin-bottom: 60px;">Lễ Hôi Trái Cây</h1>
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 ">
+              <div class="event-content">
+                <h3>Lễ hội trái cây</h3>
+                <p class="content-">
+                  Lễ hội trái cây là một sự kiện thường được tổ chức để tôn vinh 
+                  và ăn mừng sự phong phú của quả trái cây. Đây là dịp để những 
+                  người yêu thích trái cây tận hưởng những loại quả tươi ngon, tham gia vào các hoạt động vui nhộn và tìm hiểu về lợi ích của trái cây đối với sức khỏe.
+                  <br/>
+                  Một trong những mục đích chính của lễ hội trái cây là quảng bá và khuyến khích việc tiêu thụ trái cây. Nó tạo ra một không gian thú vị và thu hút người dân đến tham gia, nơi họ có thể khám phá và thưởng thức các loại trái cây đa dạng. Lễ hội thường đi kèm với chợ trái cây, nơi người ta có thể mua những loại quả tươi ngon từ các nhà trồng địa phương.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="Event-img">
+                <img style="width: 100%;border-radius:20px" src="/ocop_web/static/src/img/image11-transformed.png"/> 
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+  <!-- EvenBody -->
+            </body>
+          </html>
+        </template>
+
+    </data>
+</odoo>

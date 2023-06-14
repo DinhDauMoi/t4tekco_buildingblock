@@ -1,0 +1,171 @@
+<odoo>
+
+
+    <template id="template_header_ocop" inherit_id="website.layout" name="Template Header OCOP"
+        active="False">
+        <xpath expr="//header//nav" position="replace">
+            <t t-call="website.navbar">
+                <t t-set="_navbar_classes" t-valuef="flex-lg-column shadow-sm py-0" />
+                <div id="top_menu_container"
+                    class="container align-items-center flex-lg-column flex-wrap">
+                    <div
+                        class="d-flex flex-lg-row justify-content-between w-100 align-items-center flex-wrap flex-lg-nowrap">
+                        <!-- Left -->
+                        <!-- <div class="o_header_centered_logo">
+                            <t t-call="website.placeholder_header_brand">
+                                <t t-set="_link_class" t-valuef="m-0" />
+                            </t>
+                            <div class="oe_structure oe_structure_solo"
+                                id="oe_structure_header_vertical_1" />
+                        </div> -->
+
+                        <!-- Right -->
+                        <!-- <div class="o_header_centered_logo text-end">
+                            <div class="oe_structure oe_structure_solo"
+                                id="oe_structure_header_vertical_2" />
+                            <section class="s_text_block o_colored_level"
+                                data-snippet="s_text_block" data-name="Text"
+                                style="background-image: none;">
+                                <div class="container">
+                                    <form method="get" data-snippet="s_searchbar_input"
+                                        class="o_searchbar_form o_wait_lazy_js s_searchbar_input"
+                                        action="/website/search" data-name="Search">
+                                        <div role="search" class="input-group ">
+                                            <input type="search" name="search"
+                                                class="search-query form-control oe_search_box None"
+                                                placeholder="Search..." data-search-type="all"
+                                                data-limit="5" data-display-image="true"
+                                                data-display-description="true"
+                                                data-display-extra-link="true"
+                                                data-display-detail="true" data-order-by="name asc" />
+                                            <button type="submit" aria-label="Search" title="Search"
+                                                class="btn oe_search_button btn-primary">
+                                                <i class="oi oi-search"></i>
+                                            </button>
+                                        </div>
+                                        <input name="order" type="hidden" class="o_search_order_by"
+                                            value="name asc" />
+                                    </form>
+                                </div>
+                            </section>
+                        </div> -->
+                        <!-- Call To Action -->
+                        <t t-call="website.placeholder_header_call_to_action">
+                            <t t-set="_div_classes" t-valuef="ms-1 d-block d-lg-none ms-auto me-4" />
+                        </t>
+                        <!-- Navbar Toggler -->
+                        <t t-call="website.navbar_toggler">
+                            <t t-set="_toggler_class" t-valuef="my-3" />
+                        </t>
+                    </div>
+                    <div class="d-lg-flex flex-lg-row align-items-center w-100">
+                        <!-- Navbar Collapse -->
+                        <div id="top_menu_collapse" class="collapse navbar-collapse flex-wrap">
+                            <div class="oe_structure oe_structure_solo w-100"
+                                id="oe_structure_header_vertical_3" />
+                            <!-- Language Selector -->
+                            <t t-call="website.placeholder_header_language_selector">
+                                <t t-set="_btn_class" t-valuef="px-2" />
+                                <t t-set="_div_classes" t-valuef="d-none d-lg-block" />
+                            </t>
+                            <!-- Nav -->
+                            <t t-call="website.navbar_nav">
+                                <t t-set="_nav_class" t-valuef="mx-auto order-first order-lg-5" />
+                                <!-- Menu -->
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item" />
+                                        <t t-set="link_class" t-valuef="nav-link" />
+                                    </t>
+                                </t>
+                                <!-- Sign In -->
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_item_class" t-valuef="nav-item ms-lg-3" />
+                                    <t t-set="_link_class" t-valuef="nav-link" />
+                                </t>
+                                <!-- Search -->
+                                <div class="o_header_centered_logo text-end">
+                                    <div class="oe_structure oe_structure_solo"
+                                        id="oe_structure_header_vertical_2" />
+                                    <section class="s_text_block o_colored_level"
+                                        data-snippet="s_text_block" data-name="Text"
+                                        style="background-image: none;">
+                                        <div class="container">
+                                            <form method="get" data-snippet="s_searchbar_input"
+                                                class="o_searchbar_form o_wait_lazy_js s_searchbar_input"
+                                                action="/website/search" data-name="Search">
+                                                <div role="search" class="input-group ">
+                                                    <input type="search" name="search"
+                                                        class="search-query form-control oe_search_box None"
+                                                        placeholder="Search..."
+                                                        data-search-type="all"
+                                                        data-limit="5" data-display-image="true"
+                                                        data-display-description="true"
+                                                        data-display-extra-link="true"
+                                                        data-display-detail="true"
+                                                        data-order-by="name asc" />
+                                                    <button type="submit" aria-label="Search"
+                                                        title="Search"
+                                                        class="btn oe_search_button btn-primary">
+                                                        <i class="oi oi-search"></i>
+                                                    </button>
+                                                </div>
+                                                <input name="order" type="hidden"
+                                                    class="o_search_order_by"
+                                                    value="name asc" />
+                                            </form>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <!-- User Dropdown -->
+                                <t t-call="portal.user_dropdown">
+                                    <t t-set="_user_name" t-value="True" />
+                                    <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-3" />
+                                    <t t-set="_link_class" t-valuef="nav-link fw-bold" />
+                                </t>
+
+                                <!-- Language Selector -->
+                                <t t-call="website.placeholder_header_language_selector">
+                                    <t t-set="_div_classes" t-valuef="d-block d-lg-none mb-2" />
+                                    <t t-set="_dropdown_menu_class"
+                                        t-valuef="dropdown-menu-end position-static float-none" />
+                                </t>
+                            </t>
+                            <div class="o_header_centered_logo">
+                                <t t-call="website.placeholder_header_brand">
+                                    <t t-set="_link_class" t-valuef="m-0" />
+                                </t>
+                                <div class="oe_structure oe_structure_solo"
+                                    id="oe_structure_header_vertical_1" />
+                            </div>
+                            <!-- Language Selector -->
+
+                            <!-- <t t-call="website.placeholder_header_language_selector">
+                                <t t-set="_div_classes" t-valuef="d-block d-lg-none mb-2" />
+                                <t t-set="_dropdown_menu_class"
+                                    t-valuef="dropdown-menu-end position-static float-none" />
+                            </t> -->
+                            <!-- Call To Action -->
+                            <t t-call="website.placeholder_header_call_to_action">
+                                <t t-set="_div_classes" t-valuef="d-none d-lg-block order-lg-last" />
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+
+    <template id="template_header_ocop_opt" inherit_id="website.snippet_options"
+        name="Snippet Options">
+        <xpath expr="//we-select[@data-variable='header-template']" position="inside">
+            <we-button title="OCOP"
+                data-customize-website-views="ocop_web.template_header_ocop"
+                data-customize-website-variable="'ocop'"
+                data-img="/website/static/src/img/snippets_options/header_template_default.svg" />
+        </xpath>
+    </template>
+
+</odoo>
