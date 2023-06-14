@@ -8,7 +8,6 @@
     "category": "Website",
     "version": "16.0.1.0.0",
     "depends": [
-        "ocop",
         "web",
         "web_editor",
     ],
