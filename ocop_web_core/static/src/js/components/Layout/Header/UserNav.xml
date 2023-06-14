@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="ocop_web_core.UserNav" owl="1">
+        <div class="dropdown text-end">
+            <a href="#" class="d-block link-dark text-decoration-none" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img width="48" height="48" 
+                t-attf-src="/web/image?model=res.users&amp;field=avatar_128&amp;id={{props.user.id}}" 
+                alt="user-img" class="rounded-circle"/>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <t name="profile">
+                    <li><h6 class="dropdown-header"><t t-esc="props.user.name" /></h6></li>
+                    <li><hr class="dropdown-divider" /></li>
+                </t>
+                <t name="function">
+                    
+                    <li><hr class="dropdown-divider" /></li>
+                </t>
+                <t name="settings">
+                
+                    <li><hr class="dropdown-divider" /></li>
+                </t>
+                <li><a href="/web/session/logout?redirect=/" class="dropdown-item">Logout</a></li>
+            </ul>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="ocop_web_core.NavbarItem" owl="1">
+        <li>
+            <a t-attf-class="nav-link px-2 {{  this.props.route == this.location ? 'text-secondary disabled' : 'text-white' }}" 
+            t-att-href="this.props.route"><t t-out="this.props.name" /></a>
+        </li>
+    </t>
+</templates>

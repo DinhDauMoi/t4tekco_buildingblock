@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="ocop_web_core.Collapse" owl="1">
+        <button
+            t-ref="btn"
+            t-att-class="this.props.class"
+            t-att-style="this.props.style"
+            type="button" 
+            data-bs-toggle="collapse" 
+            aria-expanded="false" >
+            <t t-esc="this.props.name" />
+        </button>
+
+        <div t-attf-class="collapse {{this.props.collapsed ? '' : 'show'}}" t-att-id="this.props.id">
+            <t t-slot="default"/>
+        </div>
+    </t>
+</templates>

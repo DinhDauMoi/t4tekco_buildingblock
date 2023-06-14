@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="ocop_web_core.Layout" owl="1">
+        <div style="background-color: #EBEBEB;" class="d-flex flex-column">
+            <Header />
+            <main style="padding: 124px 15px 0;min-height: 100vh;">
+                <t t-slot="default"/>
+            </main>
+            <Footer />
+        </div>
+    </t>
+</templates>

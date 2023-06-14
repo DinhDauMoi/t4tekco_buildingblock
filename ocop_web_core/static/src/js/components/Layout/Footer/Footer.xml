@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="ocop_web_core.Footer" owl="1">
+        <footer class="footer text-center text-lg-start  text-white" style="background-color:#016905; padding-top:10px">
+            <div class="container">
+                <div class="row my-3">
+                    
+
+                    <div class="col-lg-8 col-md-6 mb-4 mb-md-0">
+                        <h4 class="text-uppercase mb-2" style="color: #c9c4be;">Thông tin liên hệ</h4>
+                        <h5 class="text-uppercase mb-2">BAN CHỈ ĐẠO TRUNG ƯƠNG</h5>
+                        <h5 class="text-uppercase mb-2">TRƯƠNG TRÌNH MỤC TIÊU QUỐC GIA XÂY DỰNG</h5>
+                        <h5 class="text-uppercase mb-2">NÔNG THÔN MỚI GIAI ĐOẠN 2021-2025</h5>
+
+                        
+                        <div class="container">
+                            <div class="row my-3">
+                                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                                    <img src="/ocop_web_core/static/src/images/logo-ocop-cua-chuong-trinh-ocop-quoc-gia-1.png"  width="95%" alt="OCOP" loading="lazy" />
+                                </div>
+
+                                <div class="col-lg-8 col-md-6 mb-4 mb-md-0">
+                                    Địa chỉ: Số 2, Ngọc Hà, Ba Đình, Hà Nội.<br/>
+                                    Sô điện thoai: (84-24) 38438617<br/>
+                                    Fax: (84-24) 38438617<br/>
+                                    Website: http://nongthongmoi.gov.vn<br/>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0 ">
+                        <h5 class="text-uppercase mb-4" style="text-align: center;">Liên kết nhanh</h5>
+
+                       
+                        <ul class="list-unstyled d-flex flex-row justify-content-center ">
+                            <li>
+                                <a class="px-2" href="#">
+                                    <i class="fa-brands fa-facebook fa-lg" style="color: #618cd6;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="px-2" href="#">
+                                    <i class="fa-brands fa-twitter fa-lg" style="color: #92b3ed;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="px-2" href="#">
+                                    <i class="fa-brands fa-instagram fa-lg" style="color: #ae377d;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="ps-2" href="https://github.com/t4tekco" target="blank">
+                                    <i class="fa-brands fa-github fa-lg" style="color: #ffffff;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="mb-2" style="text-align: center;"><a href="#" style="text-decoration: none;color: white;font-size: 18px;">Chính sách bảo mật </a>  </div>
+                        <div class="mb-2" style="text-align: center;"><a href="#" style="text-decoration: none;color: white;font-size: 18px;">Điều khoản sử dụng </a> </div>
+                        <div class="mb-2" style="text-align: center;"><a href="#" style="text-decoration: none;color: white;font-size: 18px;">Câu hỏi thương gặp </a></div>
+
+
+                            
+                            
+                            
+                        
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+               Powered by T4tek 
+            </div>
+        </footer>
+    </t>
+</templates>

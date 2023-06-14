@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+    <template id="ocop_web_core.sample">
+      <html>
+        <head>
+          <t t-call-assets="ocop_web_core.web_assets_core" />
+        </head>
+        <body>
+          <!-- <div id="ocop-header"></div> -->
+          
+          <!-- <div id="ocop-footer"></div> -->
+        
+
+
+  
+        </body>
+      </html>
+    </template>
+  </data>
+</odoo>
